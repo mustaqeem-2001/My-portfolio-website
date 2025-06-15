@@ -1,0 +1,61 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1E1E1E;
+    line-height: 1.9;
+    font-size: 1.24rem;
+    color: white;
+}
+
+a {
+    color: #40E0D0;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    color: #CB721C;
+}
+
+h2 {
+    color: #CB721C;
+}
+
+
+
+
+/* Specified styles */
+
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
+}
+
+.portfolio-body {
+    text-align: center;
+    line-height: 2.4;
+    margin-top: 20px;
+}
+
+.paragraph-bold {
+    font-weight: 900;
+}
+
+.projects-body {
+    margin-top: 24px;
+}
+.projects-body p {
+    text-align: center;
+}
+
+
+.skills-body img {
+    width: 75px;
+}
