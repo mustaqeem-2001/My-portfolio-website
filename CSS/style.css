@@ -61,7 +61,6 @@ h2 {
     max-inline-size: 800px;
     margin: 0 auto;
     flex-wrap: wrap;
-    flex: 1 1 calc(50% - 12px);
 }
 
 .projects-title {
@@ -73,6 +72,67 @@ h2 {
     flex: 1 1 calc(50% - 12px);
 }
 
+.skills-body {
+    max-inline-size: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .skills-body img {
     width: 75px;
+}
+
+.skills-body > * {
+    flex: 1 1 300px;
+}
+
+.html, .css, .js, .java, .csharp {
+    display: flex;
+    margin-bottom: 25px;
+}
+#html-progress-bar , #css-progress-bar, #js-progress-bar, #java-progress-bar, #csharp-progress-bar{
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    margin: auto 25px;
+    border: 2px solid black;
+    border-radius:10px;
+    margin-right: 24px;
+}
+
+#html-progress-fill {
+    background-color: green;
+    width: 80%;
+    height: 100%;
+    border-radius:8px;
+}
+
+#css-progress-fill {
+    background-color: yellow;
+    width: 60%;
+    height: 100%;
+    border-radius:7px;
+}
+
+#js-progress-fill {
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+    border-radius:8px;
+}
+
+#csharp-progress-fill {
+    background-color: red;
+    width: 10%;
+    height: 100%;
+    border-radius:8px;
+}
+
+#java-progress-fill {
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
 }
