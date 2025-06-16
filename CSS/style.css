@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color:red;
+}
+
 h1 {
     text-align: center;
     font-size: 4.5rem;
@@ -51,10 +55,23 @@ h2 {
 .projects-body {
     margin-top: 24px;
 }
-.projects-body p {
-    text-align: center;
+
+.projects-text {
+    display: flex;
+    max-inline-size: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 12px);
 }
 
+.projects-title {
+    flex: 0 1 250px;
+    font-weight: bolder;
+}
+
+.projects-info {
+    flex: 1 1 calc(50% - 12px);
+}
 
 .skills-body img {
     width: 75px;
