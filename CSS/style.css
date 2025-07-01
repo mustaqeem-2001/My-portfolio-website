@@ -4,17 +4,18 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body {
-    background-color: #1E1E1E;
+    background-color: white;
     line-height: 1.9;
     font-size: 1.24rem;
-    color: white;
+    color: black;
 }
 
 a {
-    color: #40E0D0;
+    color: black;
     text-decoration: none;
 }
 
@@ -24,32 +25,96 @@ a:hover {
 
 h1 {
     text-align: center;
-    font-size: 4.5rem;
-    color: #CB721C;
+    font-size: 7.5rem;
+    color: black;
 }
 
 h2 {
-    color: #CB721C;
+    color: black;
+    
 }
-
-
 
 
 /* Specified styles */
 
-.wrapper {
+
+
+
+/* navigation */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 8px solid black;
+    width: 100%;
+    position: fixed;
+    top: 0; /* allows to stick it to the top */
+    z-index: 1000; /* This is needed so that no other element can stack over the nav bar, a higher number means higher priority to show over the other.*/
+    backdrop-filter: blur(10px);
+}
+.navigation-logo img {
+    width: 100px;
+    height:75px;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 24px;
+    margin-block-start: 24px; /* Needed because of position fixed on the nav */
+}
+
+
+/* main */
+.main-wrapper {
     max-inline-size: 1000px;
     margin-inline: auto;
 }
 
-.portfolio-body {
+
+.portfolio-head {
+    display: flex;
+    justify-content:space-evenly;
+    min-block-size: 100vh;
+}
+
+
+.portfolio-heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.portfolio-heading h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+
+#teal-text-colour {
+    color: teal;
+}
+
+
+
+#portfolio-image {
+    width: 500px;
+    height: 400px;
+    margin: auto;
+}
+
+.portfolio-paragraph {
     text-align: center;
     line-height: 2.4;
     margin-top: 20px;
 }
 
-.paragraph-bold {
+.portfolio-paragraph a {
     font-weight: 900;
+    margin-right: 10px;
+    border: 24px solid cadetblue;
+    border-radius: 24px;
+    background-color:cadetblue;
+    color: white;
 }
 
 .projects-body {
@@ -93,7 +158,6 @@ h2 {
     margin-bottom: 25px;
 }
 #html-progress-bar , #css-progress-bar, #js-progress-bar, #java-progress-bar, #csharp-progress-bar{
-    background-color: white;
     width: 150px;
     height: 30px;
     margin: auto 25px;
